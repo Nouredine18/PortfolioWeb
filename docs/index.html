@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Between-Space | HTML CSS JS | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="space_icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="space_icon.jpg"></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Sign-Up</a>
+            <a href="about.html">About</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="nav-bg"></div>
+    <div class="page_deviding_column">
+        <form action="" class="form">
+            <div class="action">
+              <span class="load show" id="login-action" onclick="openLoginPage()"
+                >Login</span>
+              <span class="load" onclick="openRegPage()" id="reg-action">Register</span>
+            </div>
+            <div class="login show-page">
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+              <button>Login</button>
+              <a href="#" onclick="openRegPage()">Register</a>
+            </div>
+            <div class="reg">
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <button>Register</button>
+              <a href="#" onclick="openLoginPage()">Login</a>
+            </div>
+          </form>
+        <div class="page_deviding_one"></div>
+        <div class="page_deviding_two"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
