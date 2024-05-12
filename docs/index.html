@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="icon_hammer.png" type="image/x-icon">
+    <link rel="stylesheet" href="libraries/aos.css">
+    <link rel="shortcut icon" href="Images/icon_hammer.png" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src="icon_hammer.png"></a>
+        <a href="#" class="logo"><img src="Images/icon_hammer.png"></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="index.html">Sign-Up</a>
@@ -24,7 +25,7 @@
             <a href="Contact.html">Contact</a>
         </nav>
     </header>
-    <div class="nav-bg"></div>
+    <div data-aos= "face-down" class="nav-bg"></div>
     <div class="page_deviding_column">
         <form action="" class="form">
             <div class="action">
@@ -49,5 +50,7 @@
         <div class="page_deviding_two"></div>
     </div>
     <script src="script.js"></script>
+    <script src="libraries/aos.js"></script>
+    <script>AOS.init()</script>
 </body>
 </html>

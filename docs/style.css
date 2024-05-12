@@ -17,15 +17,14 @@
 
 body {
   min-height: 100vh;
-  background: url("background.jpg") no-repeat;
+  background: url("Images/background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  flex-direction: column;
-  
+
 }
 
 .header {
