@@ -83,6 +83,10 @@ img:hover {
   }
 }
 
+.error {
+  color: white;
+}
+
 .navbar a {
   color: #fff;
   font-size: 18px;
