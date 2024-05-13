@@ -22,7 +22,7 @@ function openRegPage() {
     document.getElementById("reg-action").classList.add("show");
     document.getElementById("login-action").classList.remove("show");
 }
-
+/* 
 function isLoggedIn() {
     return localStorage.getItem('isLoggedIn') === 'true';
 }
@@ -46,11 +46,11 @@ function logout() {
 function updateLogoutButton() {
     var logoutButton = document.getElementById("logoutButton");
     if (isLoggedIn()) {
-        logoutButton.style.display = "block";
+      logoutButton.style.display = "block";
     } else {
-        logoutButton.style.display = "none";
+      logoutButton.style.display = "none";
     }
-}
+  }
 
 
 
@@ -70,17 +70,17 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
 function checkLoggedIn() {
     if (isLoggedIn()) {
-        // User is logged in, show the logged in content
-        document.querySelector('.navbar').style.display = 'block';
-        document.querySelector('.nav-bg').style.display = 'block';
+      // User is logged in, show the logged in content
+      document.querySelector('.navbar').style.display = 'block';
+      document.querySelector('.nav-bg').style.display = 'block';
     } else {
-        // User is not logged in, hide the content
-        document.querySelector('.navbar').style.display = 'none';
-        document.querySelector('.nav-bg').style.display = 'none';
+      // User is not logged in, hide the content
+      document.querySelector('.navbar').style.display = 'none';
+      document.querySelector('.nav-bg').style.display = 'none';
     }
-}
+  }
 
-checkLoggedIn();
+checkLoggedIn(); */
 
 /* function checkLoggedIn() {
     if (!isLoggedIn()) {

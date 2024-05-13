@@ -313,6 +313,10 @@ input:focus {
 
 
 
+/* Add this CSS to your style.css file */
+
+/* Mobile styles */
+
 @media only screen and (max-width: 600px) {
   .navbar {
     display: none;
@@ -330,5 +334,21 @@ input:focus {
 
   .navbar a {
     margin: 10px;
+  }
+}
+
+/* Tablet styles */
+
+@media only screen and (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+
+/* Desktop styles */
+
+@media only screen and (min-width: 993px) {
+  .header {
+    padding: 20px 100px;
   }
 }
