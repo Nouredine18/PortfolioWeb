@@ -35,6 +35,7 @@
       checkLoggedIn();
       updateLogoutButton();
     </script>
+    
     <div class="page_deviding_column">
       <form data-aos="zoom-out" id="loginForm" class="form">
         <div class="action">
@@ -44,17 +45,17 @@
         <div class="login show-page">
           <input type="email" id="email" placeholder="Email" />
           <input type="password" id="password" placeholder="Password" />
-          <button class = "hvr-grow">Login</button>
+          <button type = "submit" class = "hvr-grow">Login</button>
           <a href="#" id="login" onclick="openRegPage()">Register</a>
         </div>
         <div class="reg">
           <input type="email" id="email" placeholder="Email" />
           <input type="password" id="password" placeholder="Password" />
-          <button class = "hvr-grow">Register</button>
+          <button type = "submit" class = "hvr-grow">Register</button>
           <a href="#" id="register" onclick="openLoginPage()">Login</a>
         </div>
         <div id="errorMessage" class="error"></div>
-        <button id="logoutButton" onclick="logout()" style="display: none;">Logout</button>
+        <button id="logoutButton" class = "hvr-grow" onclick="logout()" style="display: none;">Logout</button>
       </form>      
         <div class="page_deviding_one"></div>
         <div class="page_deviding_two"></div>

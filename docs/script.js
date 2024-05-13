@@ -21,7 +21,7 @@ loginButton.addEventListener('click', () => {
   }, 4000);
 });
 
-/* function openLoginPage() {
+ function openLoginPage() {
     document.querySelector(".reg").classList.remove("show-page");
     document.querySelector(".login").classList.add("show-page");
     document.getElementById("login-action").classList.add("show");
@@ -80,20 +80,18 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     updateLogoutButton();
 });
 
-function checkLoggedIn() {
+/* function checkLoggedIn() {
     if (isLoggedIn()) {
       // User is logged in, show the logged in content
       document.querySelector('.navbar').style.display = 'block';
-      document.querySelector('.nav-bg').style.display = 'block';
     } else {
       // User is not logged in, hide the content
       document.querySelector('.navbar').style.display = 'none';
-      document.querySelector('.nav-bg').style.display = 'none';
     }
   }
 
-checkLoggedIn(); 
- */
+checkLoggedIn();  */
+ 
 /* function checkLoggedIn() {
     if (!isLoggedIn()) {
         window.location.href = "index.html";
