@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libraries/aos.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="hover-min.css">
+    <link rel="stylesheet" href="hover.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link rel="shortcut icon" href="Images/icon_hammer.png" type="image/x-icon">
 </head>
 <body>
@@ -31,7 +35,6 @@
       checkLoggedIn();
       updateLogoutButton();
     </script>
-    <div class="nav-bg"></div>
     <div class="page_deviding_column">
       <form data-aos="zoom-out" id="loginForm" class="form">
         <div class="action">
@@ -41,13 +44,13 @@
         <div class="login show-page">
           <input type="email" id="email" placeholder="Email" />
           <input type="password" id="password" placeholder="Password" />
-          <button>Login</button>
+          <button class = "hvr-grow">Login</button>
           <a href="#" id="login" onclick="openRegPage()">Register</a>
         </div>
         <div class="reg">
           <input type="email" id="email" placeholder="Email" />
           <input type="password" id="password" placeholder="Password" />
-          <button>Register</button>
+          <button class = "hvr-grow">Register</button>
           <a href="#" id="register" onclick="openLoginPage()">Login</a>
         </div>
         <div id="errorMessage" class="error"></div>

@@ -8,8 +8,20 @@ menuIcon.addEventListener('click', () => {
     navbg.classList.toggle('active');
 });
 
+let loginButton = document.querySelector('.hvr-grow');
+let loadingAnimation = document.querySelector('.button12');
 
-function openLoginPage() {
+loginButton.addEventListener('click', () => {
+  loginButton.classList.add('loading');
+  loadingAnimation.classList.add('show');
+
+  setTimeout(() => {
+    loginButton.classList.remove('loading');
+    loadingAnimation.classList.remove('show');
+  }, 4000);
+});
+
+/* function openLoginPage() {
     document.querySelector(".reg").classList.remove("show-page");
     document.querySelector(".login").classList.add("show-page");
     document.getElementById("login-action").classList.add("show");
@@ -22,7 +34,7 @@ function openRegPage() {
     document.getElementById("reg-action").classList.add("show");
     document.getElementById("login-action").classList.remove("show");
 }
-/* 
+
 function isLoggedIn() {
     return localStorage.getItem('isLoggedIn') === 'true';
 }
@@ -80,8 +92,8 @@ function checkLoggedIn() {
     }
   }
 
-checkLoggedIn(); */
-
+checkLoggedIn(); 
+ */
 /* function checkLoggedIn() {
     if (!isLoggedIn()) {
         window.location.href = "index.html";

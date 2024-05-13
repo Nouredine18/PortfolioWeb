@@ -352,3 +352,22 @@ input:focus {
     padding: 20px 100px;
   }
 }
+
+
+.loading {
+  cursor: progress;
+  opacity: 0.5;
+}
+
+.show {
+  animation: spinner4 800ms linear infinite;
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+@keyframes spinner4 {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
