@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+  
+    .header .logo {
+      font-size: 18px;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navbar a {
+      margin: 10px;
+    }
+  }

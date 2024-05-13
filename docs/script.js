@@ -52,6 +52,8 @@ function updateLogoutButton() {
     }
 }
 
+
+
 updateLogoutButton();
 
 document.getElementById("loginForm").addEventListener("submit", function(event) {
@@ -66,7 +68,30 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     updateLogoutButton();
 });
 
+function checkLoggedIn() {
+    if (isLoggedIn()) {
+        // User is logged in, show the logged in content
+        document.querySelector('.navbar').style.display = 'block';
+        document.querySelector('.nav-bg').style.display = 'block';
+    } else {
+        // User is not logged in, hide the content
+        document.querySelector('.navbar').style.display = 'none';
+        document.querySelector('.nav-bg').style.display = 'none';
+    }
+}
 
+checkLoggedIn();
+
+/* function checkLoggedIn() {
+    if (!isLoggedIn()) {
+        window.location.href = "index.html";
+    }
+}
+
+checkLoggedIn();
+
+
+ */
 
 /*if (!isLoggedIn() && window.location.pathname !== "/index.html") {
     window.location.href = "index.html";
