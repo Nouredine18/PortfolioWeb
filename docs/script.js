@@ -30,7 +30,7 @@ function isLoggedIn() {
 function login(email, password) {
     if (email === "admin@gmail.com" && password === "admin") {
         localStorage.setItem('isLoggedIn', 'true');
-        // Call the email verification endpoint after successful login
+
         verifyEmail(email);
         window.location.href = "portfolio.html";
     } else {
@@ -68,6 +68,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
 
 
-/* if (!isLoggedIn() && window.location.pathname !== "/index.html") {
+/*if (!isLoggedIn() && window.location.pathname !== "/index.html") {
     window.location.href = "index.html";
 }  */

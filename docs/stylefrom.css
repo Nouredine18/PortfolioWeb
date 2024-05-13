@@ -130,49 +130,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 1.25rem 4%;
-  }
-
-  #menu-icon {
-    display: block;
-  }
-
-  .navbar {
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0.5rem 4%;
-    display: none;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .navbar a {
-    display: block;
-    margin: 1.5rem 0;
-  }
-
-  .nav-bg {
-    position: absolute;
-    top: 79px;
-    left: 0;
-    width: 100%;
-    height: 295px;
-    background: rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    z-index: 99;
-    display: none;
-  }
-
-  .nav-bg.active {
-    display: block;
-  }
-}
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -184,4 +141,24 @@ p {
 
 .MyName {
   margin-top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  .header .logo {
+    font-size: 18px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a {
+    margin: 10px;
+  }
 }
