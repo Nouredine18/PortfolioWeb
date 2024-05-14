@@ -371,3 +371,49 @@ input:focus {
     opacity: 0;
   }
 }
+
+#message {
+  display:none;
+  background: #00000052;
+  color: #ffffff;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 90px;
+  width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  #message {
+    width: 250px;
+  }
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  left: -35px;
+  content: "&#10004;";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}
+
+.page_deviding_column {
+  display: flex;
+  flex-direction: column;
+}
