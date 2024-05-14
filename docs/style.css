@@ -258,7 +258,7 @@ input:focus {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 1;  
   }
 }
 
@@ -392,6 +392,7 @@ input:focus {
 #message p {
   padding: 10px 35px;
   font-size: 18px;
+  transition: fade-in 1s;
 }
 
 .valid {
